@@ -8,7 +8,7 @@ const FloatingPolaroids = () => {
     "./Boy_examining_watering_can_202607261403.jpeg",
     "./1.jpeg",
     "./Girl_with_ladybug_on_finger_202607141209.jpeg",
-    "./Wedding_couple_touching_forehead…_2K_202608141441.jpeg",
+    "./Wedding_couple_touching_forehead_2K_202608141441.jpeg",
     "./Create_watercolor_greeting_card_202608311346.jpeg"
   ];
   return (
@@ -416,6 +416,9 @@ const Calculator = () => {
           <a href={`https://vk.ru/im?sel=-240849361&text=${getOrderText()}`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 py-4 px-6 rounded-xl bg-[rgba(255,255,255,0.03)] border border-[rgba(255,249,240,0.2)] hover:bg-[#fff9f0] hover:text-[#120f0e] text-[#fff9f0] transition-all font-medium shadow-[0_0_15px_rgba(255,249,240,0.05)] hover:shadow-[0_0_20px_rgba(255,249,240,0.2)]">
             Заказать в VK
           </a>
+          <a href={`https://clck.ru/3Vh6Je`} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 py-4 px-6 rounded-xl bg-[rgba(255,255,255,0.03)] border border-[rgba(255,249,240,0.2)] hover:bg-[#fff9f0] hover:text-[#120f0e] text-[#fff9f0] transition-all font-medium shadow-[0_0_15px_rgba(255,249,240,0.05)] hover:shadow-[0_0_20px_rgba(255,249,240,0.2)]">
+            Заказать в Max
+          </a>
         </div>
       </div>
     </div>
@@ -595,7 +598,7 @@ export default function App() {
                   onExpand={setSelectedImage}
                   aspectRatio="aspect-[3/4]"
                   images={[
-                    "./Wedding_couple_touching_forehead…_2K_202608141441.jpeg",
+                    "./Wedding_couple_touching_forehead_2K_202608141441.jpeg",
                     "./Boy_examining_watering_can_202607261403.jpeg",
                     "./Girl_standing_in_meadow_202607261427.jpeg"
                   ]}
@@ -618,8 +621,8 @@ export default function App() {
                   aspectRatio="aspect-[3/4]"
                   images={[
                     "./Woman_face_photo_restoration_202608141410.jpeg",
-                    "./Creating_vintage_family_photo_co…_202608221325.jpeg",
-                    "./Creating_vintage_wedding_photo_c…_202608221326.jpeg"
+                    "./Creating_vintage_family_photo_co_202608221325.jpeg",
+                    "./Creating_vintage_wedding_photo_c_202608221326.jpeg"
                   ]}
                   altPrefix="Реставрация"
                 />
