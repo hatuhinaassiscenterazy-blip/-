@@ -117,7 +117,7 @@ const BeforeAfterSlider = ({ beforeImage, afterImage, onExpand }: { beforeImage:
           </svg>
         </div>
       </div>
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 px-6 py-3 bg-[rgba(28,23,21,0.85)] backdrop-blur-md border border-[rgba(255,249,240,0.2)] rounded-full text-[#fff9f0] text-sm font-medium tracking-wider shadow-xl whitespace-nowrap">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 px-6 py-3 bg-[rgba(28,23,21,0.85)] backdrop-blur-md border border-[rgba(255,249,240,0.2)] rounded-full text-[#fff9f0] text-[11px] sm:text-xs md:text-sm font-medium tracking-wide md:tracking-wider shadow-xl whitespace-nowrap">
         Не просто снимок, а часть вашей истории
       </div>
       {onExpand && (
