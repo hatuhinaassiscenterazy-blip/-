@@ -345,9 +345,9 @@ const Calculator = () => {
   };
 
   return (
-    <div className="bg-glass border-glass rounded-3xl p-8 md:p-12 shadow-2xl relative z-10">
+    <div className="bg-glass border-glass rounded-3xl p-6 md:p-12 shadow-2xl relative z-10">
       <div className="text-center mb-10">
-        <h3 className="text-3xl font-semibold mb-4 text-[#fff9f0]">Рассчитать стоимость</h3>
+        <h3 className="text-2xl md:text-3xl font-semibold mb-3 md:mb-4 text-[#fff9f0]">Рассчитать стоимость</h3>
         <p className="text-[#f3e8d8] text-lg">Покажите снимок, который хочется вернуть к жизни, или товар, которому нужен продающий кадр</p>
       </div>
       
@@ -380,7 +380,7 @@ const Calculator = () => {
           return (
             <label 
               key={opt.id} 
-              className={`flex items-center justify-between p-4 rounded-xl border transition-all cursor-pointer relative z-20 ${
+              className={`flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl border transition-all cursor-pointer relative z-20 ${
                 isSelected 
                   ? 'border-[#fff9f0] bg-[rgba(255,249,240,0.05)]' 
                   : 'border-[rgba(255,249,240,0.1)] hover:border-[rgba(255,249,240,0.3)]'
@@ -399,7 +399,7 @@ const Calculator = () => {
                 </div>
                 <span className="text-[#fff9f0] font-medium leading-tight">{opt.label}</span>
               </div>
-              <span className="text-[#f3e8d8] shrink-0 ml-4">от {opt.price} ₽</span>
+              <span className="text-[#f3e8d8] shrink-0 ml-9 sm:ml-4">от {opt.price} ₽</span>
             </label>
           );
         })}
@@ -481,7 +481,7 @@ export default function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="max-w-7xl mx-auto px-6 mb-24 min-h-[75vh] flex items-center"
+          className="max-w-7xl mx-auto px-6 mb-16 md:mb-24 min-h-[75vh] flex items-center"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
             <motion.div 
@@ -494,7 +494,7 @@ export default function App() {
                 Виктория Арт | Цифровой художник & AI-продакшн
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] mb-8">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] mb-8">
                 Создаю живые кадры из ваших селфи и продающий визуал для бизнеса
               </h1>
               
@@ -564,10 +564,10 @@ export default function App() {
         </motion.section>
 
         {/* How it works Section */}
-        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} className="max-w-7xl mx-auto px-6 mb-32">
+        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} className="max-w-7xl mx-auto px-6 mb-20 md:mb-32">
           <div className="text-center mb-16">
             <div className="inline-block tracking-[0.2em] text-sm font-semibold text-[#f3e8d8] mb-4">— ВСЁ ПРОСТО</div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#fff9f0]">От вашей идеи до готового результата</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif text-[#fff9f0]">От вашей идеи до готового результата</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x divide-[rgba(243,232,216,0.18)]">
@@ -595,16 +595,16 @@ export default function App() {
         </motion.section>
 
         {/* Family Photos Section */}
-        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="personal-photo" className="max-w-7xl mx-auto px-6 mb-32">
-          <h2 className="text-4xl md:text-5xl font-semibold mb-16 text-center">Фотографии для себя и семьи</h2>
+        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="personal-photo" className="max-w-7xl mx-auto px-6 mb-20 md:mb-32">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-10 md:mb-16 text-center">Фотографии для себя и семьи</h2>
           
           <div className="space-y-8">
-            <article className="bg-[#1c1715] border-glass rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
+            <article className="bg-[#1c1715] border-glass rounded-3xl p-6 md:p-12 flex flex-col md:flex-row gap-12 items-center">
               <div className="w-full md:w-1/2">
                 <div className="w-14 h-14 rounded-2xl bg-[rgba(255,249,240,0.1)] flex items-center justify-center mb-6">
                   <Camera className="w-6 h-6 text-[#fff9f0]" />
                 </div>
-                <h3 className="text-3xl font-semibold mb-4">Фотосессия по вашим селфи или домашнему фото</h3>
+                <h3 className="text-2xl md:text-3xl font-semibold mb-3 md:mb-4">Фотосессия по вашим селфи или домашнему фото</h3>
                 <p className="text-[#f3e8d8] text-lg leading-relaxed">Индивидуальные, парные и семейные съемки в любых сюжетах на основе ваших домашних фото. Создаю профессиональные кадры без студии.</p>
               </div>
               <div className="w-full md:w-1/2 md:max-w-[400px]">
@@ -620,12 +620,12 @@ export default function App() {
               </div>
             </article>
 
-            <article className="bg-[#1c1715] border-glass rounded-3xl p-8 md:p-12 flex flex-col md:flex-row-reverse gap-12 items-center">
+            <article className="bg-[#1c1715] border-glass rounded-3xl p-6 md:p-12 flex flex-col md:flex-row-reverse gap-12 items-center">
               <div className="w-full md:w-1/2">
                 <div className="w-14 h-14 rounded-2xl bg-[rgba(255,249,240,0.1)] flex items-center justify-center mb-6">
                   <Sparkles className="w-6 h-6 text-[#fff9f0]" />
                 </div>
-                <h3 className="text-3xl font-semibold mb-4">Новая жизнь для семейных архивов</h3>
+                <h3 className="text-2xl md:text-3xl font-semibold mb-3 md:mb-4">Новая жизнь для семейных архивов</h3>
                 <p className="text-[#f3e8d8] text-lg leading-relaxed">Бережное удаление трещин, заломов, восстановление черт лица и аккуратная колоризация черно-белых архивных снимков с уважением к прошлому.</p>
               </div>
               <div className="w-full md:w-1/2 md:max-w-[400px]">
@@ -641,12 +641,12 @@ export default function App() {
               </div>
             </article>
 
-            <article className="bg-[#1c1715] border-glass rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
+            <article className="bg-[#1c1715] border-glass rounded-3xl p-6 md:p-12 flex flex-col md:flex-row gap-12 items-center">
               <div className="w-full md:w-1/2">
                 <div className="w-14 h-14 rounded-2xl bg-[rgba(255,249,240,0.1)] flex items-center justify-center mb-6">
                   <ImageIcon className="w-6 h-6 text-[#fff9f0]" />
                 </div>
-                <h3 className="text-3xl font-semibold mb-4">Праздничные поздравления</h3>
+                <h3 className="text-2xl md:text-3xl font-semibold mb-3 md:mb-4">Праздничные поздравления</h3>
                 <p className="text-[#f3e8d8] text-lg leading-relaxed">Авторские поздравительные открытки и персональные песни к важным датам, созданные специально для ваших близких.</p>
               </div>
               <div className="w-full md:w-1/2 md:max-w-[400px]">
@@ -665,8 +665,8 @@ export default function App() {
         </motion.section>
 
         {/* Business Visual Section */}
-        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="portfolio" className="max-w-7xl mx-auto px-6 mb-32">
-          <h2 className="text-4xl md:text-5xl font-semibold mb-16 text-center">Визуал для бизнеса</h2>
+        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="portfolio" className="max-w-7xl mx-auto px-6 mb-20 md:mb-32">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-10 md:mb-16 text-center">Визуал для бизнеса</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <article className="group">
@@ -713,25 +713,25 @@ export default function App() {
         </motion.section>
 
         {/* Tales & Video Section */}
-        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} className="max-w-5xl mx-auto px-6 mb-32 text-center">
+        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} className="max-w-5xl mx-auto px-6 mb-20 md:mb-32 text-center">
           <div className="inline-block mb-6 p-4 rounded-full bg-[rgba(255,249,240,0.05)] border-glass">
             <Video className="w-6 h-6 text-[#fff9f0]" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-semibold mb-12 text-[#fff9f0]">Персональная детская сказка с авторской озвучкой</h2>
+          <h2 className="text-3xl md:text-5xl font-semibold mb-10 md:mb-12 text-[#fff9f0]">Персональная детская сказка с авторской озвучкой</h2>
           
           <VideoPlayer />
         </motion.section>
 
         {/* Calculator Section */}
-        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="calculator" className="max-w-4xl mx-auto px-6 mb-32">
+        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="calculator" className="max-w-4xl mx-auto px-6 mb-20 md:mb-32">
           <Calculator />
         </motion.section>
 
         {/* About Section */}
-        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="about" className="max-w-6xl mx-auto px-6 mb-24">
+        <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }} id="about" className="max-w-6xl mx-auto px-6 mb-16 md:mb-24">
           <div className="bg-[#1c1715] border-glass rounded-3xl overflow-hidden">
             <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-2/5 p-8 md:p-12 border-b md:border-b-0 md:border-r border-[rgba(255,249,240,0.1)]">
+              <div className="w-full md:w-2/5 p-6 md:p-12 border-b md:border-b-0 md:border-r border-[rgba(255,249,240,0.1)]">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden border-glass relative group">
                   <img src="/Girl_with_ladybug_on_finger_202607141209.jpeg" alt="Виктория Арт" className="w-full h-full object-cover" />
                   <div className="absolute bottom-4 left-4 right-4 px-4 py-3 bg-[rgba(18,15,14,0.8)] backdrop-blur-md rounded-xl border border-[rgba(255,249,240,0.15)] text-center">
@@ -746,8 +746,8 @@ export default function App() {
                   </button>
                 </div>
               </div>
-              <div className="w-full md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
-                <h2 className="text-4xl font-semibold mb-8 text-[#fff9f0]">Обо мне & Доверие</h2>
+              <div className="w-full md:w-3/5 p-6 md:p-12 flex flex-col justify-center">
+                <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 text-[#fff9f0]">Обо мне & Доверие</h2>
                 <div className="space-y-6 text-[#f3e8d8] text-lg leading-relaxed mb-10">
                   <p>
                     Привет, меня зовут Виктория. Я цифровой художник, специализирующийся на реставрации, обработке и генерации изображений. В своей работе я объединяю творческий подход и современные технологии.
