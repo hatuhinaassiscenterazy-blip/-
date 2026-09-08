@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: #e0e6ed;
+    text-wrap: balance;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+  p, a, span, button, input, label, article {
+    text-wrap: balance;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+}
+
+@layer utilities {
+  .border-glass {
+    border: 1px solid rgba(224, 230, 237, 0.15);
+  }
+  .bg-glass {
+    background: rgba(28, 31, 38, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+@keyframes glare-float {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.15; }
+  50% { transform: translate(80px, 40px) scale(1.1); opacity: 0.25; }
+  100% { transform: translate(0, 0) scale(1); opacity: 0.15; }
+}
+
+@keyframes card-float {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.03; }
+  50% { transform: translateY(-30px) rotate(2deg); opacity: 0.06; }
+  100% { transform: translateY(0) rotate(0deg); opacity: 0.03; }
+}
+
+.animate-glare {
+  animation: glare-float 20s infinite ease-in-out;
+}
+
+.animate-card-1 {
+  animation: card-float 15s infinite ease-in-out;
+}
+
+.animate-card-2 {
+  animation: card-float 18s infinite ease-in-out reverse;
+  animation-delay: -5s;
+}

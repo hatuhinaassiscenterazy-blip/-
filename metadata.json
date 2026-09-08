@@ -1,0 +1,6 @@
+{
+  "name": "Виктория Арт | Цифровой художник & AI-продакшн",
+  "description": "Портфолио цифрового художника: реставрация фото, визуал для бизнеса, создание живых кадров из селфи.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
