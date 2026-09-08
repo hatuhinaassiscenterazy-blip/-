@@ -166,7 +166,7 @@ const ImageCarousel = ({ images, altPrefix, aspectRatio = "aspect-[4/5]", onExpa
       {onExpand && (
         <button 
           onClick={(e) => { e.stopPropagation(); onExpand(images[currentIndex]); }}
-          className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.3)] flex items-center justify-center text-[#fff9f0] opacity-0 group-hover/carousel:opacity-100 hover:bg-[rgba(255,249,240,0.2)] transition-all shadow-lg"
+          className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.3)] flex items-center justify-center text-[#fff9f0] opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 hover:bg-[rgba(255,249,240,0.2)] transition-all shadow-lg"
           title="Увеличить"
         >
           <ZoomIn className="w-5 h-5" />
@@ -177,13 +177,13 @@ const ImageCarousel = ({ images, altPrefix, aspectRatio = "aspect-[4/5]", onExpa
 
       <button 
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.2)] flex items-center justify-center text-[#fff9f0] opacity-0 group-hover/carousel:opacity-100 transition-opacity hover:bg-[rgba(255,249,240,0.1)] z-20"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.2)] flex items-center justify-center text-[#fff9f0] opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 transition-opacity hover:bg-[rgba(255,249,240,0.1)] z-20"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.2)] flex items-center justify-center text-[#fff9f0] opacity-0 group-hover/carousel:opacity-100 transition-opacity hover:bg-[rgba(255,249,240,0.1)] z-20"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.2)] flex items-center justify-center text-[#fff9f0] opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 transition-opacity hover:bg-[rgba(255,249,240,0.1)] z-20"
       >
         <ChevronRight className="w-5 h-5" />
       </button>
@@ -730,7 +730,7 @@ export default function App() {
                   </div>
                   <button 
                     onClick={() => setSelectedImage("./Girl_with_ladybug_on_finger_202607141209.jpeg")}
-                    className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.3)] flex items-center justify-center text-[#fff9f0] opacity-0 group-hover:opacity-100 hover:bg-[rgba(255,249,240,0.2)] transition-all shadow-lg"
+                    className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.3)] flex items-center justify-center text-[#fff9f0] opacity-100 md:opacity-0 md:group-hover:opacity-100 hover:bg-[rgba(255,249,240,0.2)] transition-all shadow-lg"
                     title="Увеличить"
                   >
                     <ZoomIn className="w-5 h-5" />
@@ -777,7 +777,7 @@ export default function App() {
                       </div>
                       <button 
                         onClick={() => setSelectedImage("./diploma25613405.png")}
-                        className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.3)] flex items-center justify-center text-[#fff9f0] opacity-0 group-hover:opacity-100 hover:bg-[rgba(255,249,240,0.2)] transition-all shadow-lg"
+                        className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-[rgba(28,23,21,0.5)] backdrop-blur-sm border border-[rgba(255,249,240,0.3)] flex items-center justify-center text-[#fff9f0] opacity-100 md:opacity-0 md:group-hover:opacity-100 hover:bg-[rgba(255,249,240,0.2)] transition-all shadow-lg"
                         title="Увеличить"
                       >
                         <ZoomIn className="w-5 h-5" />
