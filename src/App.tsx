@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 const FloatingPolaroids = () => {
   const images = [
     "./Woman_face_photo_restoration_202608141410.jpeg",
-    "./Boy_examining_watering_can_202607261403.jpeg",
+    "./boy-photo-v2.jpeg",
     "./1.jpeg",
     "./Girl_with_ladybug_on_finger_202607141209.jpeg",
     "./Wedding_couple_touching_forehead_2K_202608141441.jpeg",
@@ -599,7 +599,7 @@ export default function App() {
                   aspectRatio="aspect-[3/4]"
                   images={[
                     "./Wedding_couple_touching_forehead_2K_202608141441.jpeg",
-                    "./Boy_examining_watering_can_202607261403.jpeg",
+                    "./boy-photo-v2.jpeg",
                     "./Girl_standing_in_meadow_202607261427.jpeg"
                   ]}
                   altPrefix="Фотосессия"
