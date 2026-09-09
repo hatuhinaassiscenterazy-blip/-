@@ -742,36 +742,43 @@ export default function App() {
                 <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 text-[#fff9f0]">Обо мне & Доверие</h2>
                 <div className="space-y-6 text-[#f3e8d8] text-lg leading-relaxed mb-10">
                   <p>
-                    Я — художник, который с помощью нейросетей переносит ваши идеи в реальность. Моя главная задача — создавать эстетичный и коммерчески эффективный визуал.
-                  </p>
-                  <p>
-                    Ко мне обращаются, когда нужна красивая студийная съемка, но нет времени ехать в студию. Когда хочется подарить новую жизнь старым фото или создать каталог для бренда без аренды локаций и моделей.
+                    Я — цифровой художник и менеджер нейросетей. Создаю живой, кинематографичный визуал на стыке художественного вкуса и генеративных технологий. Для меня нейросети — это не шаблонные кнопки, а бесконечная цифровая палитра. Ко мне приходят за атмосферой студийного глянца без выезда на локацию, за бережным воскрешением старых фотоальбомов и за продающими каталогами, которые выводят бренды на новый уровень.
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="p-6 rounded-2xl bg-[rgba(255,255,255,0.03)] border border-[rgba(255,249,240,0.1)] hover:border-[rgba(255,249,240,0.3)] transition-colors">
-                    <div className="w-10 h-10 rounded-full bg-[#251f1c] border border-[#fff9f0] flex items-center justify-center shrink-0 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch">
+                  <div className="p-6 rounded-2xl bg-[rgba(255,255,255,0.03)] border border-[rgba(255,249,240,0.1)] hover:border-[rgba(255,249,240,0.3)] transition-colors h-full flex flex-col justify-start gap-[14px]">
+                    <div className="w-10 h-10 rounded-full bg-[#251f1c] border border-[#fff9f0] flex items-center justify-center shrink-0">
                       <User className="w-5 h-5 text-[#fff9f0]" />
                     </div>
-                    <h4 className="text-xl font-serif text-[#fff9f0] mb-2">Индивидуальный подход</h4>
+                    <h4 className="text-xl font-serif text-[#fff9f0]">Ручной подход & Качество</h4>
                     <p className="text-sm text-[#f3e8d8] leading-relaxed">
-                      Я работаю лично с каждым заказом, не используя автоматические фильтры. Только ручная промт-настройка и детализация.
+                      Никаких автофильтров и слепой генерации. Прорабатываю композицию, свет и текстуру кожи вручную.
                     </p>
+                    <div className="flex flex-col gap-3 mt-auto pt-2">
+                      <div className="bg-[rgba(255,249,240,0.05)] rounded-xl p-3 flex items-center gap-3 border border-[rgba(255,249,240,0.1)]">
+                        <span className="text-2xl font-serif text-[#d4af37]">100+</span>
+                        <span className="text-xs text-[#f3e8d8] leading-tight">успешных<br/>проектов</span>
+                      </div>
+                      <div className="bg-[rgba(255,249,240,0.05)] rounded-xl p-3 flex items-center gap-3 border border-[rgba(255,249,240,0.1)]">
+                        <span className="text-2xl font-serif text-[#d4af37]">100%</span>
+                        <span className="text-xs text-[#f3e8d8] leading-tight">ручная доводка<br/>деталей</span>
+                      </div>
+                    </div>
                   </div>
                   
-                  <div className="p-6 rounded-2xl bg-[rgba(255,255,255,0.03)] border border-[rgba(255,249,240,0.1)] hover:border-[rgba(255,249,240,0.3)] transition-colors">
-                    <div className="w-10 h-10 rounded-full bg-[#251f1c] border border-[#fff9f0] flex items-center justify-center shrink-0 mb-4">
+                  <div className="p-6 rounded-2xl bg-[rgba(255,255,255,0.03)] border border-[rgba(255,249,240,0.1)] hover:border-[rgba(255,249,240,0.3)] transition-colors h-full flex flex-col justify-start gap-[12px]">
+                    <div className="w-10 h-10 rounded-full bg-[#251f1c] border border-[#fff9f0] flex items-center justify-center shrink-0">
                       <Check className="w-5 h-5 text-[#fff9f0]" />
                     </div>
-                    <h4 className="text-xl font-serif text-[#fff9f0] mb-2">Сертифицированный специалист</h4>
-                    <p className="text-sm text-[#f3e8d8] leading-relaxed mb-4">
-                      Прошла профильное обучение и успешно завершила курс «Нейро-Дизайнер 1.0».
+                    <h4 className="text-xl font-serif text-[#fff9f0]">Сертифицированный специалист</h4>
+                    <p className="text-sm text-[#f3e8d8] leading-relaxed">
+                      Прошла профильное обучение и успешно завершила курс «Менеджер нейросетей».
                       <br />
                       Автор: Алексей Рыков. Сертификат № 12630.
                     </p>
-                    <div className="aspect-[3/4] rounded-2xl border-glass overflow-hidden relative group bg-[#1c1715]">
-                      <img src="./diploma25613405.png" alt="Сертификат" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" />
+                    <div className="rounded-2xl border-glass overflow-hidden relative group bg-[#1c1715] flex items-center justify-center mt-auto">
+                      <img src="./diploma25613405.png" alt="Сертификат" className="w-full max-h-[180px] object-contain opacity-60 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/30 pointer-events-none group-hover:bg-transparent transition-colors duration-500">
                         <span className="text-[#fff9f0] font-medium tracking-wider text-sm border border-[rgba(255,249,240,0.3)] px-4 py-2 rounded-full backdrop-blur-md bg-[rgba(28,23,21,0.5)]">Сертификат</span>
                       </div>
